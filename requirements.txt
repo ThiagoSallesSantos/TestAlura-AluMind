@@ -1,0 +1,32 @@
+## REST API Libs
+flask
+
+## Data validation
+pydantic
+pydantic-settings
+email-validator
+
+## Generative Models
+langchain
+langchain-google-genai ## Gemini
+langchain-openai ## ChatGPT
+langchain-ollama ## Ollama
+
+## SQLAlchemy Lib
+sqlalchemy
+
+## Drivers DataBase
+psycopg2-binary ## PostgreSQL
+# PyMySQL ## MySQL
+# cryptography ## MySQL - Resources 
+
+## Task Schedule
+apscheduler
+
+## Utils - Email
+tabulate
+
+## TESTS LIBS ##
+
+## Request HTTP
+requests
