@@ -1,0 +1,14 @@
+<table class="table">
+    <tr>
+        <th scope="col">Feature</th>
+        <th scope="col">Total</th>
+        <th scope="col">%</th>
+    </tr>
+    {% for feature in requested_features.fields %}
+    <tr>
+        <th scope="row"><a href="{{ url_for('report.get_feedbacks_by_data', data=feature) }}">{{ feature }}(s)</a></td>
+        <td>{{ requested_features[feature] }}</td>
+        <td>{{ requested_features[feature] / requested_features.total * 100 | round(1) }}%</td>
+    </tr>
+    {% endfor %}
+</table> 

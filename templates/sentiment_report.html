@@ -1,0 +1,14 @@
+<table class="table">
+    <tr>
+        <th scope="col">Sentiment</th>
+        <th scope="col">Total</th>
+        <th scope="col">%</th>
+    </tr>
+    {% for sentiment in sentiment_percentage.fields %}
+    <tr>
+        <th scope="row"><a href="{{ url_for('report.get_feedbacks_by_data', data=sentiment) }}">{{ sentiment }}(s)</a></td>
+        <td>{{ sentiment_percentage[sentiment] }}</td>
+        <td>{{ sentiment_percentage[sentiment] / sentiment_percentage.total * 100 | round(1) }}%</td>
+    </tr>
+    {% endfor %}
+</table> 

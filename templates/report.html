@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+
+{% if sentiment_percentage %}
+    {% include "sentiment_report.html"%}
+    <hr class="border border-primary border-3 opacity-75">
+{% endif %}
+{% if requested_features %}
+    {% include "feature_report.html"%}
+    <hr class="border border-primary border-3 opacity-75">
+{% endif %}
+{% include "feedback_report.html"%}
+
+{% endblock %}
