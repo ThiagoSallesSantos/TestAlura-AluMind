@@ -7,7 +7,7 @@
     </tr>
     {% for feedback in list_feedbacks %}
     <tr>
-        <th scope="row"><a href="{{ url_for('feedback.get_rated_feedback', feedback_id=feedback.feedback_id) }}">{{ feedback.feedback_id }}(s)</a></td>
+        <th scope="row"><a href="{{ url_for('feedbacks.get_rated_feedback', feedback_id=feedback.feedback_id) }}">{{ feedback.feedback_id }}(s)</a></td>
         <td>{{ feedback.feedback_raw }}</td>
         <td>{{ feedback.feedback_sentiment }}</td>
         <td>{{ feedback.feedback_created_at.strftime('%d/%m/%Y - %H:%m') }}</td>
