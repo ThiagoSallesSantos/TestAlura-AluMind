@@ -1,8 +1,8 @@
 import requests
 
 json = {
-    "email": "",
-    "name": ""
+    "email": "test@test.com",
+    "name": "test"
 }
 
 response = requests.post(
